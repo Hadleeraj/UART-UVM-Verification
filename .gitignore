@@ -1,0 +1,15 @@
+# Simulator-generated files
+simv
+simv.daidir/
+csrc/
+xcelium.d/
+INCA_libs/
+work/
+*.vcd
+*.vpd
+*.shm/
+*.key
+*.history
+*.log
+!results/*.log
+coverage/
