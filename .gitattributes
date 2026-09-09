@@ -1,0 +1,6 @@
+*.sv text eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.f text eol=lf linguist-detectable=false
+results/*.log linguist-generated=true
