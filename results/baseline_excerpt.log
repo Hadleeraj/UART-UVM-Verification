@@ -1,0 +1,37 @@
+Measured UART baseline excerpt, 2026-09-09. Full log inspection counted 95 scoreboard TEST PASSED messages and zero TEST FAILED messages. This excerpt omits individual transfers.
+
+[2026-09-09 22:40:46 UTC] vcs -full64 -licqueue +incdir+$UVM_HOME/src $UVM_HOME/src/uvm.sv $UVM_HOME/src/dpi/uvm_dpi.cc -CFLAGS -DVCS '-timescale=1ns/1ns' '+vcs+flush+all' '+warn=all' '-sverilog' design.sv testbench.sv  && ./simv +vcs+lic+wait  
+
+UVM_INFO uart_coverage.sv(132) @ 97130450000: uvm_test_top.env.cov [COV] ????????????????????????????????????????
+UVM_INFO uart_coverage.sv(135) @ 97130450000: uvm_test_top.env.cov [COV] FINAL COVERAGE REPORT
+UVM_INFO uart_coverage.sv(138) @ 97130450000: uvm_test_top.env.cov [COV] ????????????????????????????????????????
+UVM_INFO uart_coverage.sv(141) @ 97130450000: uvm_test_top.env.cov [COV] Overall Coverage     : 85.58%
+UVM_INFO uart_coverage.sv(145) @ 97130450000: uvm_test_top.env.cov [COV] Baud Rate Coverage   : 100.00%
+UVM_INFO uart_coverage.sv(149) @ 97130450000: uvm_test_top.env.cov [COV] Data Length Coverage : 100.00%
+UVM_INFO uart_coverage.sv(153) @ 97130450000: uvm_test_top.env.cov [COV] Parity EN Coverage   : 100.00%
+UVM_INFO uart_coverage.sv(157) @ 97130450000: uvm_test_top.env.cov [COV] Stop Bits Coverage   : 100.00%
+UVM_INFO uart_coverage.sv(161) @ 97130450000: uvm_test_top.env.cov [COV] TX Data Coverage     : 50.00%
+UVM_INFO uart_coverage.sv(165) @ 97130450000: uvm_test_top.env.cov [COV] ????????????????????????????????????????
+UVM_INFO /apps/vcsmx/vcs/X-2025.06-SP1//etc/uvm-ieee/src/base/uvm_report_server.svh(902) @ 97130450000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  512
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COV]   110
+[DRV]   100
+[MON]   100
+[RNTST]     1
+[SCO]   200
+[UVM/RELNOTES]     1
+
+$finish called from file "/apps/vcsmx/vcs/X-2025.06-SP1//etc/uvm-ieee/src/base/uvm_root.svh", line 591.
+$finish at simulation time          97130450000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 97130450000 ps
+CPU Time:     10.150 seconds;       Data structure size:   0.4Mb
+Wed Sep  9 18:41:12 2026
+Done
